@@ -1,0 +1,102 @@
+/* Seat Styles */
+.seat {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #eee;
+  color: #fff;
+  font-size: 26px;
+}
+
+.seat.booked {
+  background-color: #d9534f; /* Red for booked seats */
+  cursor: not-allowed; /* No action for booked seats */
+}
+
+.seat.available {
+  background-color: #5cb85c; /* Green for available seats */
+}
+
+.seat:hover:not(.booked) {
+  transform: scale(1.1); /* Enlarge seat on hover */
+  background-color: #4cae4c; /* Slightly darker green on hover */
+}
+
+.seat-number {
+  font-size: 20px;
+  color: #0a0a0a;
+}
+
+.screen {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  width: 150%;
+  max-width: 1000px;
+  margin: auto;
+}
+/* Seat Styles */
+.seat {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 90px;
+  color: #fff;
+
+}
+
+.seat.booked {
+  background-color: red; /* Red color for booked seats */
+}
+
+.seat.available {
+  background-color: green; /* Green color for available seats */
+}
+
+.seat.premium {
+  background-color: gold; /* Gold color for premium seats */
+}
+
+.seat:hover {
+  transform: scale(1.1); /* Slightly enlarge seat on hover */
+}
+
+.seat-number {
+  font-size: 20px;
+  margin-top: 4px;
+  color: white;
+}
+
+/* Cinema Layout */
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 seats per row */
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .seat {
+    width: 50px;
+    height: 50px;
+  }
+}

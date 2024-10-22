@@ -1,0 +1,46 @@
+.cinema {
+  text-align: center;
+  margin: 60px;
+}
+
+.screen {
+  background-color: #ddd;
+  padding: 25px;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+.first-row {
+  display: flex;
+  gap: 10;
+  justify-content: space-between; /* Space between left and right columns */
+  align-items: flex-start; /* Align columns to the top */
+  margin-bottom: 10px; /* Reduced space below the first row */
+}
+
+.seat-column {
+  display: flex;
+  padding-left: 250px;
+  flex-direction: column;
+  align-items: center; /* Center seats in each column */
+  width: 40%; /* Adjust width for each column */
+}
+
+.second-row {
+  display: flex;
+  padding-right: 250px;
+  justify-content: center; /* Center the seats in the second row */
+  margin-top: 20px; /* Space above the second row */
+}
+
+.seat-map {
+  display: flex;
+  flex-wrap: wrap; /* Allow seats to wrap */
+  justify-content: center; /* Center seats in the column */
+  padding: 10px; /* Padding around seat map */
+}
+
+h3 {
+  margin: 10px 0; /* Space above and below the headings */
+}

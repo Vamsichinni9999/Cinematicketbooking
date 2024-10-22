@@ -1,0 +1,63 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+ .movie12 {
+  display: flex;                 /* Use flexbox for alignment */
+  flex-direction: column;       /* Stack items vertically */
+  align-items: center;          /* Center items horizontally */
+  margin: 20px;                /* Add some space around the container */
+  padding: 15px;               /* Add padding inside the container */
+  border: 2px solid #ccc;      /* Add a border */
+  border-radius: 8px;          /* Round the corners */
+  background-color: #f9f9f9;   /* Light background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.movie12 input[type="number"] {
+  width: 60px;                 /* Set width for the input */
+  padding: 10px;              /* Add padding */
+  margin-bottom: 10px;        /* Space below the input */
+  border: 1px solid #ccc;     /* Input border */
+  border-radius: 4px;         /* Round input corners */
+  font-size: 16px;            /* Increase font size */
+}
+
+.movie12 button {
+  padding: 10px 15px;         /* Add padding */
+  background-color: #28a745;  /* Button background color */
+  color: white;               /* Text color */
+  border: none;               /* Remove border */
+  border-radius: 4px;        /* Round button corners */
+  cursor: pointer;            /* Change cursor to pointer */
+  font-size: 16px;            /* Increase font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.movie12 button:hover {
+  background-color: #218838;  /* Darken button on hover */
+}
